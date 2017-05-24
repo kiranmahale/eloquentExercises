@@ -30,3 +30,18 @@ function rec_nth(n,list){
 		rec_nth(n = n-1,list.rest);
 	}
 }
+
+function deepEqual(obj1,obj2){
+	var i = j = 0;
+	if(typeof(obj1) === "object" && typeof(obj2) === "object"){
+		for(var p1 in obj1)	j = j+1;
+		for(var p2 in obj2) i = i+1;
+		if( i != j ){
+			return false ;
+		}else{
+			for(var k = 0; k < obj1.length; k++){
+				if()
+			}
+		}
+	}else{ return "NaO";}
+}
