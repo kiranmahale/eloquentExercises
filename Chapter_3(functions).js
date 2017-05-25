@@ -19,3 +19,10 @@ function countBs(str){
 	}
 	return bs;
 }
+
+//Closure - being able to reference a specific instance of local variables in an function called
+function firstNumber(first){
+	return function secondNumber(second){
+		return first + second;
+	}
+}
