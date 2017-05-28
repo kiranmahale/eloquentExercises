@@ -41,3 +41,29 @@ function chessBoard(size){
 	}
 	return str;
 }
+//Recursion
+function power(base,exponent){
+	if(exponent == 0)
+		return 1;
+	else
+		return base * power(base,exponent-1);
+}
+
+function min(x,y){
+	if(x <= y)
+		return x;
+	else
+		return y;
+}
+
+// Your code here.
+function isEven(number){
+	  if(number < 0)
+        return isEven(-number);//learned
+	  else if(number == 0)
+    	return true;
+      else if(number == 1)
+        return false;
+      else 
+        return isEven(number-2);
+}
